@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ChatGPT//Boda Jeraneel y Horacio//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:jeraneel-horacio-20251212-1730@chatgpt
+DTSTAMP:20251112T000000Z
+SUMMARY:Boda de Jeraneel y Horacio
+DESCRIPTION:Ceremonia y celebración en Restaurante Royalty, Tadeo Haenke N°2352, Iquique, Chile
+LOCATION:Restaurante Royalty, Tadeo Haenke N°2352, Iquique, Chile
+DTSTART;TZID=America/Santiago:20251212T173000
+DTEND;TZID=America/Santiago:20251212T203000
+END:VEVENT
+END:VCALENDAR
