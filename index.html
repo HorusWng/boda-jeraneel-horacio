@@ -79,12 +79,18 @@
 
       <footer>
         <em>Viernes 12 de diciembre de 2025 • 17:30 horas</em>
-        <audio controls>
-          <source src="elvis.mp3" type="audio/mpeg">
-          Si no escuchas la música, asegúrate de poner el archivo <strong>elvis.mp3</strong> en la misma carpeta que esta página.
-        </audio>
+<audio id="song" autoplay loop muted>
+  <source src="elvis.mp3" type="audio/mpeg">
+</audio>
       </footer>
     </div>
   </div>
+  <script>
+  document.body.addEventListener('click', function() {
+    const song = document.getElementById('song');
+    song.muted = false;
+    song.play();
+  }, { once: true });
+</script>
 </body>
 </html>
