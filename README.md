@@ -5,8 +5,7 @@ Este repositorio contiene una invitación web lista para publicarse en **GitHub 
 ## Archivos
 - `index.html` → Página principal (invitación)
 - `boda-jeraneel-horacio.ics` → Evento de calendario (agregar al calendario)
-- `elvis.mp3` → **(no incluido)** archivo de audio que debes subir junto a `index.html` para que suene en la invitación.
-
+- `elvis.mp3` → Música de fondo.
 ## Publicar en GitHub Pages
 1. Crea un repositorio en GitHub (p.ej. `boda-jeraneel-horacio`).
 2. Sube `index.html`, `boda-jeraneel-horacio.ics` y `elvis.mp3` (opcional).
@@ -18,6 +17,6 @@ Este repositorio contiene una invitación web lista para publicarse en **GitHub 
 > Si no subirás la canción, el `<audio>` seguirá visible, pero no sonará.
 
 ## WhatsApp RSVP
-El botón de confirmación tiene mensaje prellenado y envía a `+56 9 9731 7438`.
+El botón de confirmación tiene mensaje prellenado y envía un mensaje predefinido a un determinado número telefónico.
 
 ¡Felicidades! 💍
