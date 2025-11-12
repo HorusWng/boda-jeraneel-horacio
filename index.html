@@ -40,10 +40,13 @@
   .btn:hover { transform:translateY(-2px); box-shadow:0 10px 22px rgba(180,107,78,.3); }
   .btn.ghost { background:transparent; color:var(--accent); }
   footer { margin-top:24px; text-align:center; color:#7c6a60; font-size:.9rem; }
-  audio { display:block; margin: 16px auto 0; width:min(520px,82vw);}
+  .note { font-size:.85rem; margin-top:6px; color:#8c7366; }
 </style>
 </head>
 <body>
+  <audio id="weddingSong" autoplay muted loop>
+    <source src="elvis.mp3" type="audio/mpeg">
+  </audio>
   <div class="wrap">
     <div class="card">
       <p class="intro">Con la bendición de Dios y en compañía de sus familias</p>
@@ -79,18 +82,16 @@
 
       <footer>
         <em>Viernes 12 de diciembre de 2025 • 17:30 horas</em>
-<audio id="song" autoplay loop muted>
-  <source src="elvis.mp3" type="audio/mpeg">
-</audio>
+        <div class="note">(Toca la pantalla para activar la música 🎵)</div>
       </footer>
     </div>
   </div>
   <script>
-  document.body.addEventListener('click', function() {
-    const song = document.getElementById('song');
-    song.muted = false;
-    song.play();
-  }, { once: true });
-</script>
+    document.body.addEventListener('click', function() {
+      const song = document.getElementById('weddingSong');
+      song.muted = false;
+      song.play().catch(()=>{});
+    }, { once: true });
+  </script>
 </body>
 </html>
